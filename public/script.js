@@ -103,7 +103,7 @@ async function setFiveDayForecast(city) {
         let curr_date = new Date();
         curr_date.setTime(json_response.list[i].dt * 1000);
 
-        if (prev_date.getDay() < curr_date.getDay()) {
+        if (prev_date.getDay() != curr_date.getDay()) {
             forecast_body += '</div></div>' + '<div class="col"> <div class="weather-card">';
             forecast_body += '<h5 class="timestamp">' + day_of_week[curr_date.getDay()] + '</h5>';
         }
@@ -132,7 +132,7 @@ window.onload = function() {
         setCurrentWeather(value);
 
         let forecast_title = document.getElementById("forecast-title");
-        forecast_title.innerHTML = "Five Day Forecast for " + standardizeString(value);
+        forecast_title.innerHTML = "Forecast for " + standardizeString(value);
         forecast_title.style.display = "block";
 
         setFiveDayForecast(value);
