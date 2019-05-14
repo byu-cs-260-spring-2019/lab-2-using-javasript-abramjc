@@ -3,7 +3,7 @@ day_of_week = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Satu
 
 // Takes the name of a city, return json object from openweathermap api call
 async function getCurrentCityWeather(value) {
-    const url = "http://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=c924bc068a5e2c83b7ee180a8d012386";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=c924bc068a5e2c83b7ee180a8d012386";
     try {
 
         let response = await fetch(url); 
@@ -17,7 +17,7 @@ async function getCurrentCityWeather(value) {
 }
 
 async function getCurrentZipWeather(zipCode) {
-    const url = "http://api.openweathermap.org/data/2.5/weather?zip=" + zipCode + ",US&units=imperial" + "&APPID=c924bc068a5e2c83b7ee180a8d012386";
+    const url = "https://api.openweathermap.org/data/2.5/weather?zip=" + zipCode + ",US&units=imperial" + "&APPID=c924bc068a5e2c83b7ee180a8d012386";
     try {
 
         let response = await fetch(url); 
@@ -74,7 +74,7 @@ async function setCurrentWeather(city) {
     
     let title = standardizeString((json_response.weather)[0].main);
     let description = standardizeString(json_response.weather[0].description);
-    let icon_url = 'http://openweathermap.org/img/w/' + json_response.weather[0].icon + '.png';
+    let icon_url = 'https://openweathermap.org/img/w/' + json_response.weather[0].icon + '.png';
 
     document.getElementById("current-weather").innerHTML = 
         '<h3 class="card-title">Currently in ' + json_response.name + '</h3>' +
@@ -109,7 +109,7 @@ async function setFiveDayForecast(city) {
 
 //        forecast_body += "<br>";
         forecast_body += '<p class="timestamp">' + TwelveHourTime(curr_date) + '</p>';
-        forecast_body += '<img class="weather-icon" src="http://openweathermap.org/img/w/' + json_response.list[i].weather[0].icon + '.png">'
+        forecast_body += '<img class="weather-icon" src="https://openweathermap.org/img/w/' + json_response.list[i].weather[0].icon + '.png">'
         forecast_body += '<p class="card-body">' + standardizeString(json_response.list[i].weather[0].description) + '</p>'
         forecast_body += '<hr>';
 
