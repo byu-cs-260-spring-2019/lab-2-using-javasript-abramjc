@@ -1,0 +1,91 @@
+html {
+    background-color: #07148e;
+}
+
+body {
+    background-color: #07148e;
+}
+
+#content {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.col {
+    margin: 1em;
+}
+
+.container {
+    max-width: 95%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.weather-card {
+    border-radius: 2px;
+    background-color: rgb(240, 240, 240);
+    min-width: 150px; 
+    width: 95%;
+    margin: auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
+}
+
+.current-weather-card {
+    border-radius: 2px;
+    background-color: rgb(240, 240, 240);
+    min-width: 150px;
+    margin: auto;
+    display: table;
+    text-align: center;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col {
+    margin: .4em;
+    padding: 0px;
+}
+
+.weather-card-body {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    
+}
+
+.weather-icon {
+    display: block;
+    height: 50px;
+    width: 50px; 
+    margin: auto;
+}
+
+.timestamp {
+    margin-left: .2em;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+#forecast-title {
+    display: none;
+    text-align: center;
+}
+
+#top-right-col {
+    margin: auto;
+}

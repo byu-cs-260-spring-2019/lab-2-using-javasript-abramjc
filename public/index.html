@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Lab 2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="content" class="container">
+        <h1>Weather Info</h1>
+
+        <div id="first-row" class="row">
+            <div class="col">
+                <form action="">
+                    <label for="">Enter a U.S. city</label>
+                    <input id="weatherInput" type="text"><br>
+                    <input id="weatherSubmit" type="submit" value="Submit">
+                </form>
+            </div>
+            <!-- One day forecast -->
+            <div id="current-weather" class="col">
+                <!--
+                <div class="current-weather-card">
+                    <h5>Today</h5>
+                    <div class="weather-card-body">
+                        <h6 class="card-title">Cloudy</h6>
+                        <img class="weather-icon" src="images/weatherForm.png" alt="weather.png">
+                        <p class="card-body">test weather card</p>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+        <h3 id="forecast-title"></h3>
+        <div id="five-day-forecast" class="row">
+            <!--
+            <div class="col">
+            <div class="weather-card">
+                <h5>Day of Week</h5>
+                <p>Time of Day</p>
+                <img class="weather-icon" src="" alt="">
+                <p class="card-body"></p>
+                <p>Time of Day</p>
+                <img class="weather-icon" src="" alt="">
+                <p class="card-body"></p>
+                <p>Time of Day</p>
+                <img class="weather-icon" src="" alt="">
+                <p class="card-body"></p>
+            </div>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="./script.js">
+    </script>
+
+  </body>
+</html>
