@@ -97,7 +97,7 @@ async function setFiveDayForecast(city) {
     let prev_date = new Date();
     prev_date.setTime(json_response.list[0].dt * 1000);
 
-    forecast_body += "<h5>" + day_of_week[prev_date.getDay()] + "</h5>";
+    forecast_body += '<h5 class="timestamp">' + day_of_week[prev_date.getDay()] + "</h5>";
 
     for (var i = 0; i < json_response.list.length; i++) {
         let curr_date = new Date();
