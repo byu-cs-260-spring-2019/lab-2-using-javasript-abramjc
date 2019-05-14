@@ -30,6 +30,7 @@ async function getCurrentZipWeather(zipCode) {
     }
 }
 
+
 async function getCityFiveDayForecast(city) {
     const url = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&APPID=c924bc068a5e2c83b7ee180a8d012386";
     try {
